@@ -36,7 +36,7 @@ pipeline {
               if %ERRORLEVEL% NEQ 0 (
                 powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr https://bun.sh/install.ps1 -useb | iex"
               )
-              set "PATH=%USERPROFILE%\.bun\bin;%PATH%"
+              set "PATH=%USERPROFILE%\\.bun\\bin;%PATH%"
               bun --version
             """
           }
@@ -55,7 +55,7 @@ pipeline {
             """
           } else {
             bat """
-              set "PATH=%USERPROFILE%\.bun\bin;%PATH%"
+              set "PATH=%USERPROFILE%\\.bun\\bin;%PATH%"
               bun install
             """
           }
@@ -74,7 +74,7 @@ pipeline {
             """
           } else {
             bat """
-              set "PATH=%USERPROFILE%\.bun\bin;%PATH%"
+              set "PATH=%USERPROFILE%\\.bun\\bin;%PATH%"
               bun run build
             """
           }
@@ -93,7 +93,7 @@ pipeline {
             """
           } else {
             bat """
-              set "PATH=%USERPROFILE%\.bun\bin;%PATH%"
+              set "PATH=%USERPROFILE%\\.bun\\bin;%PATH%"
               bun run test
             """
           }
