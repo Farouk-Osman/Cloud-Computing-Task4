@@ -6,7 +6,7 @@ pipeline {
   }
 
   parameters {
-    string(name: "REPO_URL", defaultValue: "https://github.com/your-user/your-repo.git", description: "Git repository URL")
+    string(name: "REPO_URL", defaultValue: "https://github.com/Farouk-Osman/Cloud-Computing-Task4.git", description: "Git repository URL")
     string(name: "BRANCH", defaultValue: "main", description: "Branch to build")
   }
 
