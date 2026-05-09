@@ -2,13 +2,10 @@
   "name": "task4-ci-cd-jenkins",
   "version": "1.0.0",
   "private": true,
-  "description": "Simple calculator with Jest tests for CI pipeline.",
+  "description": "Simple calculator with Bun tests for CI pipeline.",
   "type": "commonjs",
   "scripts": {
-    "build": "node -e \"console.log('No build step for this project')\"",
-    "test": "jest --ci"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
+    "build": "bun -e \"console.log('No build step for this project')\"",
+    "test": "bun test"
   }
 }

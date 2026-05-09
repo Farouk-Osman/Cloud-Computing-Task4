@@ -1,3 +1,4 @@
+const { describe, expect, test } = require("bun:test");
 const { add, subtract, multiply, divide } = require("../src/calculator");
 
 describe("calculator", () => {
