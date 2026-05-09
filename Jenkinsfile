@@ -6,8 +6,8 @@ pipeline {
   }
 
   parameters {
-    string(name: "REPO_URL", defaultValue: "https://github.com/Farouk-Osman/Cloud-Computing-Task4.git", description: "Git repository URL")
-    string(name: "BRANCH", defaultValue: "main", description: "Branch to build")
+    string(name: "REPO_URL", defaultValue: "https://github.com/Farouk-Osman/Cloud-Computing-Task4", description: "Git repository URL")
+    string(name: "BRANCH", defaultValue: "master", description: "Branch to build")
   }
 
   stages {
